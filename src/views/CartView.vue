@@ -82,7 +82,7 @@ const hasItems = computed(() => items.value.length > 0)
 const totalPrice = computed(() =>
   items.value.reduce((sum, it) => sum + it.qty * it.price, 0)
 )
-
+// 监听购物车变化，更新加载状态
 // 清空购物车（确认框）
 async function onClear () {
   if (!hasItems.value) return
