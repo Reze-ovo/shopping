@@ -1,0 +1,39 @@
+/* src/assets/styles/global.css */
+
+/* 全局 CSS 变量 */
+:root {
+  --header-height: 60px;
+  --footer-height: 56px;
+}
+
+/* 小屏设备 (≤ 600px) */
+@media (max-width: 600px) {
+  .app-header {
+    font-size: 1.2rem !important;
+    padding: 0 8px !important;
+  }
+  .search-bar {
+    width: 95% !important;
+  }
+  .category-menu {
+    width: 95% !important;
+  }
+  .bottom-nav .nav-item span,
+  .bottom-nav .nav-item el-icon {
+    font-size: 10px !important;
+  }
+}
+
+/* 中屏设备 (601px – 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .search-bar,
+  .category-menu {
+    width: 90% !important;
+  }
+}
+
+/* 其它全局调整 */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
