@@ -3,6 +3,8 @@ import { createStore } from 'vuex'
 import cart from './cart'
 import user from './user'
 import orders from './orders'
+import favorites from './favorites'
+import addresses from './addresses'
 export default createStore({
   state: {
     // 用户登录状态
@@ -30,6 +32,8 @@ export default createStore({
   modules: {
     user,
     cart,
-    orders
+    orders,
+    favorites,
+    addresses
   }
 })

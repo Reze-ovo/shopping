@@ -46,6 +46,21 @@ const routes = [
     path: '/register',
     name: 'register',
     component: () => import('@/views/RegisterView.vue')
+  },
+  {
+    path: '/favorites',
+    name: 'favorites',
+    component: () => import('@/views/FavoritesView.vue')
+  },
+  {
+    path: '/order/:id',
+    name: 'order-detail',
+    component: () => import('@/views/OrderDetailView.vue')
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: () => import('@/views/SettingsView.vue')
   }
 ]
 
